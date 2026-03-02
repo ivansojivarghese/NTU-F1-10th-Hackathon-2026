@@ -2,7 +2,7 @@
 
 This repository contains a ROS2 Python controller in `gap_finder_template.py` that implements a Follow-the-Gap style planner and adds racing-oriented logic for **DRS straights**, **warm-up lap mapping**, and **physics-based predictive braking**.
 
-Track: [Nuerburgring](./Nuerburgring.png)
+Track: [Nuerburgring](./Nuerburgring_map.png)
 
 Team: Individual
 
