@@ -1,6 +1,10 @@
-# F1TENTH Simulator — Gap Follower (Template)
+# Gap Follower (Dynamic)
 
 This repository contains a ROS2 Python controller in `gap_finder_template.py` that implements a Follow-the-Gap style planner and adds racing-oriented logic for **DRS straights**, **warm-up lap mapping**, and **physics-based predictive braking**.
+
+Track: [Nuerburgring](./Nuerburgring.png)
+
+Team: Individual
 
 ## What's different in `gap_finder_template.py`
 
@@ -98,3 +102,9 @@ And publishes:
 How you launch it depends on your ROS2 workspace setup. Common options:
 - Run directly as a script (after sourcing your ROS2 environment): `python3 gap_finder_template.py`
 - Or integrate it into your existing ROS2 package/launch files.
+
+## References
+
+https://www.nathanotterness.com/2019/04/the-disparity-extender-algorithm-and.html
+
+https://github.com/nvan21/F1Tenth-Autonomous-Racing/tree/main?tab=readme-ov-file
