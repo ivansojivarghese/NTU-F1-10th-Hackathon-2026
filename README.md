@@ -4,7 +4,7 @@ This repository contains a ROS2 Python controller in `gap_finder_template.py` th
 
 Track: [Nuerburgring](./Nuerburgring_map.png)
 
-Team: Individual
+Team: Ivan Soji Varghese (Individual)
 
 ## What's different in `gap_finder_template.py`
 
