@@ -1,0 +1,63 @@
+RoboRacer - How to launch the Simulator?
+
+Ensure that Docker is running (Image / Container)
+
+1. Go to Ubuntu 20.04 in CMD [or Git Bash]
+2. cd ~/F1Tenth_Workshop/install_windows/
+3. sudo ./run_docker_container_win.sh
+
+--- ALTERNATIVE IN UBUNTU 20.04
+
+ivans@MSI:~$ cd F1Tenth_Workshop_2526
+ivans@MSI:~/F1Tenth_Workshop_2526$  cd install_windows
+ivans@MSI:~/F1Tenth_Workshop_2526/install_windows/ sudo ./run_docker_container_win.sh
+Container is Running. Starting new session.
+root@f1tenth_gym_ros:/#
+
+Sudo password: mniISV25
+
+cd F1Tenth_Workshop_2526/install_windows/sudo ./run_docker_container_win.sh
+
+---
+
+4. root@f1tenth_gym_ros:/# cd /sim_ws
+5. root@f1tenth_gym_ros:/sim_ws# source /opt/ros/foxy/setup.bash
+6. root@f1tenth_gym_ros:/sim_ws# colcon build
+7. root@f1tenth_gym_ros:/sim_ws# source install/local_setup.bash
+8. root@f1tenth_gym_ros:/sim_ws# ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+
+--- AFTER SIMULATOR IS OPEN AND RUNNING
+-- FOLLOW AS BELOW:
+
+root@f1tenth_gym_ros:/# echo $0
+bash
+root@f1tenth_gym_ros:/# source /opt/ros/foxy/setup.bash
+root@f1tenth_gym_ros:/# source /sim_ws/install/local_setup.bash
+
+--- TO DRIVE
+-- OPEN A NEW TERMINAL
+
+$ docker exec -it f1tenth_gym_ros bash 
+
+root@f1tenth_gym_ros:~# source /opt/ros/foxy/setup.bash
+root@f1tenth_gym_ros:~# source /sim_ws/install/local_setup.bash
+root@f1tenth_gym_ros:~# cd /sim_ws/src/f1tenth_simulator
+root@f1tenth_gym_ros:/sim_ws/src/f1tenth_simulator# python3 gap_finder_base.py
+
+python3 gap_finder_template.py
+
+-- COPY SIMULATOR PACKAGE FROM PC TO UBUNTU (IN BASH)
+
+docker cp "C:\Users\ivans\~\F1Tenth_Workshop_2526\f1tenth_simulator" f1tenth_gym_ros:/sim_ws/src/
+
+-- CHANGE MAP
+
+root@f1tenth_gym_ros:/sim_ws# nano src/f1tenth_gym_ros/config/sim.yaml
+
+# map parameters
+map_path: '/sim_ws/src/f1tenth_gym_ros/maps/Nuerburgring_map'
+map_img_ext: '.png'
+
+colcon build
+source install/local_setup.bash
+ros2 launch f1tenth_gym_ros gym_bridge_launch.py
