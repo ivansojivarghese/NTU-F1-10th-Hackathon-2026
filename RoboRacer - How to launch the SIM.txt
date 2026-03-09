@@ -45,6 +45,7 @@ root@f1tenth_gym_ros:~# cd /sim_ws/src/f1tenth_simulator
 root@f1tenth_gym_ros:/sim_ws/src/f1tenth_simulator# python3 gap_finder_base.py
 
 python3 gap_finder_template.py
+python3 pure_pursuit.py
 
 -- COPY SIMULATOR PACKAGE FROM PC TO UBUNTU (IN BASH)
 
