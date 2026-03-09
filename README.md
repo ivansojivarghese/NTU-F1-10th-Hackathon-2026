@@ -116,3 +116,9 @@ How you launch it depends on your ROS2 workspace setup. Common options:
 https://www.nathanotterness.com/2019/04/the-disparity-extender-algorithm-and.html
 
 https://github.com/nvan21/F1Tenth-Autonomous-Racing/tree/main?tab=readme-ov-file
+
+## Optimal Solution
+
+Run this as a script instead: `python3 pure_pursuit.py`
+
+See the [winning solution](https://github.com/RobotHanzo/F1Tenth_Hackathon_Evaluation).
