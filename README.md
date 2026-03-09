@@ -4,6 +4,8 @@ This repository contains a ROS2 Python controller in `gap_finder_template.py` th
 
 ![Nuerburgring](./Nuerburgring_map.png)
 
+![Demo](./gif.gif)
+
 Track: [Nuerburgring](https://github.com/f1tenth/f1tenth_racetracks/tree/main/Nuerburgring)
 
 Team: Ivan Soji Varghese (Individual)
