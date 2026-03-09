@@ -8,7 +8,9 @@ Track: [Nuerburgring](https://github.com/f1tenth/f1tenth_racetracks/tree/main/Nu
 
 Team: Ivan Soji Varghese (Individual)
 
-Results: 5th place out of 7 teams
+Result: 5th place out of 7 teams
+
+![Leaderboard](./leaderboard.jpg)
 
 ## What's different in `gap_finder_template.py`
 
